@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Title and description-->
+    <title>Duck Hunt</title>
+    <meta name="description" content="Duck Hunt coded with Jquery, html and sass for my developpement bootcamp" />
+    <!--Bootstrap link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Link to the css file-->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Font for timer found on google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+    <!--NES Stylesheet-->
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+
+    <!--OG-->
+    <meta property="og:title" content="Duck Hunt" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="style/duckHunt.jpg" />
+    <meta property="og:description" content="Duck Hunt - style game I made for my course" />
+
+    <!--Google search console-->
+    <meta name="google-site-verification" content="xQWla_CBIX3NF_8J5XJP2QxrYljH9uqWVP8bJHFk90U" />
+</head>
+
+<body>
+
+    <main>
+        <!--Timer-->
+        <section class='countdown'>
+            <p>Timer</p>
+            <p class='timer'></p>
+        </section>
+        <!-- Using a table found on bootstrap for score -->
+        <!-- https://getbootstrap.com/docs/4.5/content/tables/#contextual-classes -->
+        <section class='score'>
+            <table class="table table-sm table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td class='player1'>Mark</td>
+                        <td class='player1'>0</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td class='player2'>Jacob</td>
+                        <td class='player2'>0</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+
+        <!--Summoning cuby \[T]/ -->
+        <div class='container'>
+        </div>
+        <div class="cuby">
+        </div>
+        <!---Restart button-->
+        <button type="button" class="nes-btn is-primary">Restart</button>
+    </main>
+
+    <!-- Jquery/JS links-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="script/script.js"></script>
+</body>
+
+</html>

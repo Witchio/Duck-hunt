@@ -1,0 +1,127 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 1000px;
+  height: 1000px;
+  border: 5px solid black;
+  background-image: url("duckHunt.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  margin: auto;
+  padding: 0;
+}
+
+.cuby {
+  background-color: lightpink;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: all-scroll;
+      -ms-flex-pack: all-scroll;
+          justify-content: all-scroll;
+  font-style: bold;
+  font-size: 2.5rem;
+  color: white;
+  margin: 5px;
+  cursor: crosshair;
+}
+
+.cuby::after {
+  content: '٩(◕‿◕｡)۶';
+}
+
+.mouse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: red;
+}
+
+.mouse::after {
+  content: 'o(>< )o';
+}
+
+.keyboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: deepskyblue;
+}
+
+.keyboard::after {
+  content: '(„• ֊ •„)';
+}
+
+section.countdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  width: 300px;
+  height: 250px;
+  z-index: 1;
+  left: 1100px;
+  top: 100px;
+  font-family: 'Metal Mania', cursive;
+  font-style: bold;
+  font-size: 5rem;
+  color: red;
+  background-color: black;
+  text-align: center;
+}
+
+section.score {
+  width: 300px;
+  position: relative;
+  left: 1100px;
+  top: 200px;
+}
+
+button {
+  position: relative;
+  left: 1100px;
+  top: 200px;
+}
+
+body {
+  cursor: url("gun.png"), auto;
+}
+/*# sourceMappingURL=style.css.map */

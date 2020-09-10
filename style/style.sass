@@ -1,0 +1,94 @@
+*
+    margin : 0
+    padding: 0
+main
+    width: 1000px
+    height: 1000px
+    border : 5px solid black
+    background-image: url('duckHunt.jpg')
+    background-position: center
+    background-size: cover
+
+.container
+    margin : auto
+    padding : 0
+
+//Default cuby 
+.cuby
+    background-color: lightpink
+    height: 150px
+    width: 150px
+    position: absolute
+    top: 0%
+    left: 0%
+    right: 0%
+    border-radius: 5px
+    //Centering the emoji
+    display: flex
+    align-items: center
+    justify-content: all-scroll
+    //Changing style of the emoji
+    font-style: bold
+    font-size: 2.5rem
+    color: white
+    margin : 5px
+    cursor: crosshair
+
+//using this in order to change html content from css
+.cuby::after
+    content: '٩(◕‿◕｡)۶'
+
+//Cuby when mouse wins
+.mouse
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: red
+.mouse::after
+    content: 'o(>< )o'
+
+//cuby when keyboard wins
+.keyboard
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color : deepskyblue
+.keyboard::after
+    content: '(„• ֊ •„)'
+
+//Let's make the countdown look sexy
+
+section.countdown
+    display: flex
+    justify-content: center
+    align-content: center
+    flex-direction : column
+    position: relative
+    width : 300px
+    height : 250px
+    z-index : 1
+    left : 1100px
+    top : 100px
+    font-family: 'Metal Mania', cursive
+    font-style : bold 
+    font-size : 5rem
+    color : red
+    background-color: black
+    text-align: center
+
+//Reshaping the score table that I got from bootstrap
+section.score
+    width : 300px
+    position : relative
+    left : 1100px
+    top : 200px
+
+//Restart button
+button
+    position : relative
+    left : 1100px
+    top : 200px
+
+//Cursor
+body
+    cursor: url('gun.png'), auto
